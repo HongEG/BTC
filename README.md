@@ -1,8 +1,7 @@
-# BTC
-cocktail helper in discord
+# Discord Bot - BTC
 
 ### Project Description
-- 프로젝트 명
+- BTC(
 
 - 어떤 프로젝트인지 소개
 
@@ -23,3 +22,12 @@ cocktail helper in discord
 
 ### Reference
 - 프로젝트에 포함된 외부 코드나 리소스 정보(각각의 출처 및 배포 라이선스)
+
+
+### Developers
+
+
+### License
+
+
+### Impression
