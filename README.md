@@ -3,7 +3,17 @@
 ### Project Description
 - BTC(Bot To Cocktail) -> 😠NOT BITCOIN
 
-- 
+- Project 초안 
+    - discord bot(menu를 통해서 선택 가능하게)
+    - 칵테일 랜덤 추천
+    - 재료 선택 후 제작 가능 칵테일 목록 뽑아내주기
+    - 재료 랜덤 추천
+    - 칵테일에 곁들여 먹는 무언가
+    - 도움되는 사이트 제공(ex : 가니쉬 방법, ?? 등등)
+    - 나만의 바 기능(id / login 기능)
+        - 칵테일 재료 추가, 조회, 재고 관리(추가된 날짜, 유통기한, 보관 위치 등)
+        - 제작 가능 칵테일 레시피 제공
+        - 칵테일 목록에서 선택 시 제작 방법 상세히 제공 / 사진 웹 검색 제공
 
 
 ### Project information
