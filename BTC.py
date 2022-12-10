@@ -3,7 +3,7 @@ from recipe_detail import *
 from mybar import *
 from discord.ext import commands
 
-token = 'MTAzNzU3MTU3MTczNDI4NjM3Ng.GDkawu.oCrI6rSwntuQ68P8s6FLoBF5OwS_F_NyV_NsiQ'
+token = 'token'
 client = discord.Client()
 bot = commands.Bot(command_prefix="$") #접두사를 $로 지정
 
@@ -75,7 +75,7 @@ async def rating(ctx, number:float):
     await ctx.send(embed = embed)
             
 
-#random 입력시 cocktail_racipe 1열에서 랜덤 하나를 뽑아서 그 행의 칵테일을 출력해준다.(미구현)
+#random 입력시 cocktail_racipe 1열에서 랜덤 하나를 뽑아서 그 행의 칵테일을 출력해준다.
 @bot.command()
 async def random(ctx):
     embed = discord.Embed(title = "칵테일 이름", description = (cocktail_random()[0]))
@@ -105,7 +105,7 @@ async def stock(ctx):
 async def add(ctx, option):
     await ctx.send(bar_add(option))
 
-#아 인트는 number로 입력받는구나
+#int는 number로 입력받아서 사용
 @bot.command()
 async def delete(ctx, number:int):
     bar_delete(int(number))
