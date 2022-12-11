@@ -68,9 +68,8 @@ $stock, $add, $delete 기능 사용 및 결과
 
 ### Reference
 - https://discord.com/developers/docs/intro : 디스코드 공식 api
-- https://doohyun.tistory.com/4 : html 모든 태그 제거 
+- https://doohyun.tistory.com/4 : 파싱시 html 모든 태그 제거를 위해 코드를 참고
 - https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html : pandas 공식 사이트 -> 가이드 참고
-
 - https://ducj.tistory.com/186 : anaconda3 prompt가 사라질 경우 직접 실행하는 방법
 - https://luran.me/475 : discord module 오류 생길경우 선행해서 실행할 코드를 참고
 - https://pcmc.tistory.com/entry/190311-Bot-Detection-%ED%81%AC%EB%A1%A4%EB%9F%AC-%EC%B0%A8%EB%8B%A8-%ED%81%AC%EB%A1%A4%EB%9F%AC-%EC%9A%B0%ED%9A%8C-1?category=809836 : BeautifulSoup 사용 웹 크롤링시 오류 발생할경우 우회방법에 대한 코드 참고
@@ -82,4 +81,6 @@ BSD 2.0, Berkeley Software Distribution License. used
 ### Needs to Improvements
 - 데이터를 출력하는 방법으로 embed만 과다하게 사용했다. -> button 등 다른 discord 함수로 교체
 - ingredient로 검색하는 기능 구현
-- 칵테일 제작 과정을 봇과 상호작용 가능하게 구현 -> 이미지(발할라)
+- 칵테일 제작 과정을 봇과 상호작용 가능하게 구현
+- login / id 기능 구현
+- 데이터에 오류가 있을 경우 예외처리 자동으로 가능하게 
