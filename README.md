@@ -33,6 +33,14 @@ $welcome : 시작시 나오는 메뉴. 기본적인 메뉴를 보여주고 사�
 
 $recipe : 사용자의 옵션에 따른 레시피 제공을 위한 가이드 메뉴
 
+![random](./img/random1.PNG)
+
+$random : 랜덤 칵테일 출력1
+
+![random](./img/random2.PNG)
+
+$random : 랜덤 칵테일 출력2
+
 ![recipe_name](./img/detail_name.PNG)
 
 $name ~~ 을 통한 이름으로 칵테일 검색
@@ -49,11 +57,11 @@ $glass ~~ 을 통한 카테고리로 칵테일 검색
 
 $category ~~ 을 통한 평점으로 칵테일 검색
 
-![mybar](.img/mybar.PNG)
+![mybar](./img/mybar.PNG)
 
 $mybar : 사용자 자신만의 가상 바 관련 메뉴
 
-![mybar_result](.img/mybar_result.PNG)
+![mybar_result](./img/mybar_result.PNG)
 
 $stock, $add, $delete 기능 사용 및 결과
 
