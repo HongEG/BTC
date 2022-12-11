@@ -25,7 +25,7 @@
 - mybar.csv : 시용자의 가상 바와 관련된 데이터를 저장.
 
 ### Usage
-- ![welcome](BTC/img/welcome.png)
+- ![welcome](./img/welcome.png)
 
 
 ### Reference
