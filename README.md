@@ -83,4 +83,4 @@ BSD 2.0, Berkeley Software Distribution License. used
 - 칵테일 제작 과정을 봇과 상호작용 가능하게 구현
 - login / id 기능 구현
 - 데이터에 오류가 있을 경우 예외처리 자동으로 가능하게 
-- 사용자로부터 입력받을때 자동완서익능 
+- 사용자로부터 입력받을때 자동완성기능
