@@ -33,6 +33,29 @@ $welcome : 시작시 나오는 메뉴. 기본적인 메뉴를 보여주고 사�
 
 $recipe : 사용자의 옵션에 따른 레시피 제공을 위한 가이드 메뉴
 
+![recipe_name](./img/detail_name.PNG)
+
+$name ~~ 을 통한 이름으로 칵테일 검색
+
+![recipe_category](./img/detail_category.PNG)
+
+$category ~~ 을 통한 카테고리로 칵테일 검색
+
+![recipe_glass](./img/detail_glass.PNG)
+
+$glass ~~ 을 통한 카테고리로 칵테일 검색
+
+![recipe_rating](./img/detail_rating.PNG)
+
+$category ~~ 을 통한 평점으로 칵테일 검색
+
+![mybar](.img/mybar.PNG)
+
+$mybar : 사용자 자신만의 가상 바 관련 메뉴
+
+![mybar_result](.img/mybar_result.PNG)
+
+$stock, $add, $delete 기능 사용 및 결과
 
 
 ### Reference
@@ -46,6 +69,7 @@ $recipe : 사용자의 옵션에 따른 레시피 제공을 위한 가이드 메
 
 ### License
 
+BSD 2.0, Berkeley Software Distribution License. used
 
 ### Needs to Improvements
 - 데이터를 출력하는 방법으로 embed만 과다하게 사용했다. -> button 등 다른 discord 함수로 교체
