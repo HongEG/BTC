@@ -25,7 +25,7 @@ async def welcome(ctx):
     embed.add_field(name = "더 나은 칵테일 생활을 위헤", value = "각종 도움되는 사이트 및 자료들 url($url)", inline = False)
     await ctx.send(embed = embed)
 
-#!recipe 입력시 나오는 메뉴, 이름, 재료, 카테고리, 잔, 별점 기반으로 검색이 가능하게
+#!recipe 입력시 나오는 메뉴, 이름, 재료(구현예정), 카테고리, 잔, 별점 기반으로 검색이 가능한 메뉴 출력
 @bot.command()
 async def recipe(ctx):
     embed = discord.Embed(title = "레시피 메뉴", color = 0x62c1cc)
@@ -35,15 +35,17 @@ async def recipe(ctx):
     embed.add_field(name = "$rating 별점", value = "일정 별점 이상인 칵테일 조회(영어)", inline = False)
     await ctx.send(embed = embed)
     
+#잔 리스트 출력 
 @bot.command()
 async def glasslist(ctx):
     embed = discord.Embed(title = "잔 목록", description = glass_list)
     await ctx.send(embed = embed)
 
-#detail option value 했을때의 각 상황에 맞는 embed 출력 -> 계산 및 출력은 recipe_detail.py 파일에서 하자(미구현)
+#detail option value 했을때의 각 상황에 맞는 embed 출력 -> 계산 및 출력은 recipe_detail.py 파일
 @bot.command()
 async def detail(ctx, option1 , *option2):
 #공백 있을 시 제거를 위해 전체를 받은 뒤 join 해준다.
+#await 오류를 방지하기 위한 same으로 값을 받은 뒤 for문 실행
     args = ' '.join(option2)
     args_int = option2
     if(option1 == "name"):  
@@ -66,16 +68,17 @@ async def detail(ctx, option1 , *option2):
             embed.add_field(name = "Name", value = same[i], inline = False)
         await ctx.send(embed = embed)
 
+#float(number로 값을 받아서 값을 비교 후 출력
 @bot.command()
-async def rating(ctx, number:float):
-    embed = discord.Embed(title = float(number) + "점보다 높은 칵테일 : ", color = 0x62c1cc)
-    same_rating = (rating_cocktail(float(number))[0 : len(rating_cocktail(float(number)))])
+async def rating(ctx, number:int()):
+    embed = discord.Embed("일정 점수 이상인 칵테일 : ", color = 0x62c1cc)
+    same_rating = (rating_cocktail(int(number))[0 : len(rating_cocktail(int(number)))])
     for i in range (0, len(same_rating)):
         embed.add_field(name = "Name", value = same_rating[i], inline = False)
     await ctx.send(embed = embed)
             
 
-#random 입력시 cocktail_racipe 1열에서 랜덤 하나를 뽑아서 그 행의 칵테일을 출력해준다.
+#random 입력시 cocktail_racipe 1열에서 랜덤 하나를 뽑아서 그 행의 칵테일을 출력해준다.(미구현)
 @bot.command()
 async def random(ctx):
     embed = discord.Embed(title = "칵테일 이름", description = (cocktail_random()[0]))
@@ -87,7 +90,7 @@ async def random(ctx):
     
     await ctx.send(embed = embed)
 
-#mybar 입력시 새로운 메뉴 출력 -> 1.현재 재고 확인, 2. 재고 추가 3. 제작 가능 칵테일 4. 추천?, mybar.py에서 하자
+#mybar 입력시 새로운 메뉴 출력 -> 1.현재 재고 확인, 2. 재고 관리 3. 제작 가능 칵테일(구현 예정) 
 @bot.command()
 async def mybar(ctx):
     embed = discord.Embed(title = "My bar!", description = "나만의 개인 바 설정!")
@@ -105,7 +108,6 @@ async def stock(ctx):
 async def add(ctx, option):
     await ctx.send(bar_add(option))
 
-#int는 number로 입력받아서 사용
 @bot.command()
 async def delete(ctx, number:int):
     bar_delete(int(number))
@@ -115,10 +117,13 @@ async def delete(ctx, number:int):
 @bot.command()
 async def url(ctx):
     embed = discord.Embed(title = "도움이 되는 url", description = "BTC 제작 도움 및 그 외 칵테일 제작에 도움이 되는 사이트들")
-    embed.add_field(name = "$stock : ", value = "현재 창고에 있는 칵테일들 목록 보기!", inline = False)
-    embed.add_field(name = "$stock : ", value = "현재 창고에 있는 칵테일들 목록 보기!", inline = False)
-    embed.add_field(name = "$stock : ", value = "현재 창고에 있는 칵테일들 목록 보기!", inline = False)
-    embed.add_field(name = "$stock : ", value = "현재 창고에 있는 칵테일들 목록 보기!", inline = False)
+    embed.add_field(name = "CSV 파일 다운로드 : " , value = "url", inline = False)
+    embed.add_field(name = "BTC 제작 일지(Blog) : ", value = "추가예정", inline = False)
+    embed.add_field(name = "Shot-Cocktail-Recipe : ", value = "재료를 바탕으로 검색 가능한 칵테일 웹사이트 (url : https://www.shot-cocktail-recipe.com/)", inline = False)
+    embed.add_field(name = "Webtender : ", value = "파싱한 데이터 원본 사이트 (url:https://www.webtender.com/)", inline = False)
+    await ctx.send(embed = embed)
 
 bot.run(token)
+
+
 
