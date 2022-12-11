@@ -25,7 +25,7 @@
 - mybar.csv : 시용자의 가상 바와 관련된 데이터를 저장.
 
 ### Usage
-- 코드 실행 가이드라인
+- ![welcome](.img/welcome.png)
 
 
 ### Reference
