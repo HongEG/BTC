@@ -21,8 +21,7 @@
 - Cocktail_recipe.py : 웹 파싱 및 데이터 가공, csv파일로 작성하는 코드 구현
 - recipe_detail.py : csv파일을 읽어서 pandas를 사용한 Dataframe 가공한 데이터 또는 csv파일을 사용해서 사용자의 명령어를 받아서 처리하는 코드 구현
 - mybar.py : 사용자의 바를 가상으로 구현, 저장한 데이터 출력, 추가, 삭제 ,수정기능(수정기능 -> 구현 예정)
-- cocktail_recipe.csv : 웹 파싱한 데이터
-- mybar.csv : 시용자의 가상 바와 관련된 데이터를 저장.
+- img/*.PNG : README.md에 사용한 이미지 파일 저장
 
 ### Usage
 ![welcome](./img/welcome.PNG)
@@ -84,3 +83,4 @@ BSD 2.0, Berkeley Software Distribution License. used
 - 칵테일 제작 과정을 봇과 상호작용 가능하게 구현
 - login / id 기능 구현
 - 데이터에 오류가 있을 경우 예외처리 자동으로 가능하게 
+- 사용자로부터 입력받을때 자동완서익능 
