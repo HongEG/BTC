@@ -26,9 +26,9 @@
 
 ### Usage
 ![welcome](./img/welcome.PNG)
-$welcome -> 시작시 나오는 메뉴. 기본적인 메뉴를 보여주고 사용자로부터 입력을 받는다. 선택지 제공
+$welcome : 시작시 나오는 메뉴. 기본적인 메뉴를 보여주고 사용자로부터 입력을 받는다. 선택지 제공(/n)
 ![recipe](./img/recipe.PNG)
-$recipe -> 사용자의 옵션에 따른 레시피 제공을 위한 가이드 메뉴
+$recipe : 사용자의 옵션에 따른 레시피 제공을 위한 가이드 메뉴(/n)
 
 
 ### Reference
